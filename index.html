@@ -1,529 +1,1385 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NADIF@co — Kerudung & Hijab</title>
-  <meta name="description" content="NADIF@co — koleksi kerudung modern, elegan, dan nyaman untuk gaya sehari-hari.">
-  <style>
-    :root{
-      --cream:#f3eee7;
-      --cream-2:#e8ded2;
-      --brown:#6d5546;
-      --brown-dark:#382d28;
-      --black:#242321;
-      --white:#fffdf9;
-      --muted:#85786f;
-      --line:#ded3c8;
-      --accent:#9b806c;
-      --shadow:0 15px 45px rgba(56,45,40,.10);
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{
-      font-family:Arial, Helvetica, sans-serif;
-      color:var(--brown-dark);
-      background:var(--white);
-      line-height:1.6;
-    }
-    a{text-decoration:none;color:inherit}
-    button{font:inherit}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    /* TOP BAR */
-    .topbar{
-      background:var(--black);
-      color:#fff;
-      text-align:center;
-      padding:10px 16px;
-      font-size:13px;
-      letter-spacing:.3px;
-    }
-    .topbar strong{color:#e8cdb9}
+<title>NADIF@co — Pashmina & Hijab</title>
 
-    /* NAVBAR */
-    header{
-      position:sticky;
-      top:0;
-      z-index:50;
-      background:rgba(255,253,249,.96);
-      backdrop-filter:blur(12px);
-      border-bottom:1px solid rgba(109,85,70,.12);
-    }
-    .nav{
-      max-width:1200px;
-      height:82px;
-      margin:auto;
-      padding:0 24px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:25px;
-    }
-    .logo{
-      font-family:Georgia,serif;
-      font-size:28px;
-      letter-spacing:2px;
-      font-weight:700;
-      white-space:nowrap;
-    }
-    .logo span{font-weight:400}
-    .navlinks{
-      display:flex;
-      gap:30px;
-      align-items:center;
-      font-size:13px;
-      text-transform:uppercase;
-      letter-spacing:1px;
-    }
-    .navlinks a{transition:.25s}
-    .navlinks a:hover{color:var(--accent)}
-    .navicons{display:flex;gap:10px}
-    .icon{
-      width:39px;height:39px;border:1px solid var(--line);
-      border-radius:50%;display:grid;place-items:center;
-      background:#fff;font-size:16px;cursor:pointer;
-      transition:.25s;
-    }
-    .icon:hover{background:var(--cream);transform:translateY(-2px)}
-    .hamb{display:none}
+<meta name="description"
+content="NADIF@co — Koleksi pashmina dan hijab modern, elegan dan nyaman untuk aktivitas sehari-hari.">
 
-    /* HERO */
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#faf9f7;
+    color:#2b2724;
+    line-height:1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.96);
+    border-bottom:1px solid #e8e2dc;
+    backdrop-filter:blur(10px);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+}
+
+.logo{
+    font-family:Georgia,serif;
+    font-size:27px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.logo span{
+    font-weight:normal;
+}
+
+nav{
+    display:flex;
+    gap:28px;
+}
+
+nav a{
+    color:#333;
+    text-decoration:none;
+    font-size:14px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#8b5e3c;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.icon-btn{
+    width:42px;
+    height:42px;
+    border:1px solid #ddd;
+    background:white;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.cart-btn{
+    position:relative;
+}
+
+.cart-count{
+    position:absolute;
+    right:-4px;
+    top:-4px;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:#2d2723;
+    color:white;
+    font-size:11px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:610px;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(
+        90deg,
+        rgba(250,248,245,.98) 0%,
+        rgba(250,248,245,.90) 45%,
+        rgba(250,248,245,.20) 100%
+    ),
+    url("https://images.pexels.com/photos/9398148/pexels-photo-9398148.jpeg?auto=compress&cs=tinysrgb&w=1600");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:1200px;
+    width:100%;
+    margin:auto;
+    padding:70px 20px;
+}
+
+.hero-small{
+    font-size:12px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-family:Georgia,serif;
+    font-size:68px;
+    line-height:1.02;
+    max-width:650px;
+    font-weight:500;
+    margin-bottom:25px;
+}
+
+.hero p{
+    max-width:560px;
+    font-size:16px;
+    color:#635b55;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    border:0;
+    background:#2d2825;
+    color:white;
+    padding:15px 28px;
+    text-decoration:none;
+    cursor:pointer;
+    font-size:13px;
+    letter-spacing:.5px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#8b5e3c;
+    transform:translateY(-2px);
+}
+
+.btn-light{
+    background:white;
+    color:#2d2825;
+    border:1px solid #ddd;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 20px;
+}
+
+.section-head{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-label{
+    font-size:11px;
+    letter-spacing:4px;
+    color:#927154;
+    text-transform:uppercase;
+}
+
+.section h2{
+    font-family:Georgia,serif;
+    font-size:42px;
+    font-weight:500;
+    margin:10px 0;
+}
+
+.section-head p{
+    color:#777;
+}
+
+/* =========================
+   PRODUCT
+========================= */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.product{
+    background:white;
+    border:1px solid #e9e3dd;
+    position:relative;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.product:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 40px rgba(40,30,20,.10);
+}
+
+.product-image{
+    position:relative;
+    height:390px;
+    overflow:hidden;
+    background:#eee;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.product:hover .product-image img{
+    transform:scale(1.04);
+}
+
+.badge{
+    position:absolute;
+    left:14px;
+    top:14px;
+    background:#2d2825;
+    color:white;
+    padding:6px 10px;
+    font-size:10px;
+    letter-spacing:1px;
+    z-index:2;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-category{
+    color:#9a7659;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+}
+
+.product h3{
+    font-family:Georgia,serif;
+    font-size:23px;
+    font-weight:500;
+    margin:5px 0;
+}
+
+.product-description{
+    color:#777;
+    font-size:13px;
+    margin-bottom:12px;
+}
+
+.price{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.product-buttons{
+    display:flex;
+    gap:8px;
+}
+
+.product-buttons button{
+    flex:1;
+}
+
+.btn-buy{
+    background:#8b5e3c;
+}
+
+.btn-buy:hover{
+    background:#6e4529;
+}
+
+/* =========================
+   PROMO
+========================= */
+
+.promo{
+    max-width:1200px;
+    margin:0 auto 90px;
+    padding:0 20px;
+}
+
+.promo-box{
+    min-height:300px;
+    display:flex;
+    align-items:center;
+    padding:55px;
+    background:
+    linear-gradient(
+        90deg,
+        rgba(40,31,25,.90),
+        rgba(40,31,25,.40)
+    ),
+    url("https://images.pexels.com/photos/5125319/pexels-photo-5125319.jpeg?auto=compress&cs=tinysrgb&w=1400");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.promo-content{
+    max-width:550px;
+}
+
+.promo h2{
+    font-family:Georgia,serif;
+    font-size:42px;
+    margin:10px 0;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+    background:#f0ebe5;
+}
+
+.about-grid{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-image{
+    height:500px;
+    overflow:hidden;
+}
+
+.about-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.about-text h2{
+    font-family:Georgia,serif;
+    font-size:45px;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    color:#665e58;
+    margin-bottom:18px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#292421;
+    color:white;
+    padding:60px 20px 30px;
+}
+
+.footer-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:50px;
+}
+
+.footer-logo{
+    font-family:Georgia,serif;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+footer h4{
+    margin-bottom:15px;
+}
+
+footer a{
+    display:block;
+    color:#d9d2cc;
+    text-decoration:none;
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+footer p{
+    color:#c8c0ba;
+    font-size:14px;
+}
+
+.copyright{
+    max-width:1200px;
+    margin:40px auto 0;
+    padding-top:25px;
+    border-top:1px solid #514b47;
+    color:#aaa;
+    font-size:12px;
+}
+
+/* =========================
+   WHATSAPP FLOAT
+========================= */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:28px;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+    z-index:3000;
+}
+
+/* =========================
+   CART
+========================= */
+
+.cart-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    z-index:2000;
+    display:none;
+}
+
+.cart-overlay.active{
+    display:block;
+}
+
+.cart{
+    position:absolute;
+    right:0;
+    top:0;
+    height:100%;
+    width:420px;
+    max-width:100%;
+    background:white;
+    padding:25px;
+    overflow-y:auto;
+}
+
+.cart-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom:20px;
+    border-bottom:1px solid #ddd;
+}
+
+.cart-header h2{
+    font-family:Georgia,serif;
+    font-weight:500;
+}
+
+.close-cart{
+    border:0;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.cart-item{
+    display:flex;
+    gap:12px;
+    padding:18px 0;
+    border-bottom:1px solid #eee;
+}
+
+.cart-item img{
+    width:75px;
+    height:90px;
+    object-fit:cover;
+}
+
+.cart-item-info{
+    flex:1;
+}
+
+.cart-item-info h4{
+    font-family:Georgia,serif;
+    font-weight:500;
+}
+
+.cart-price{
+    font-weight:bold;
+    margin:4px 0;
+}
+
+.quantity{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-top:8px;
+}
+
+.quantity button{
+    width:26px;
+    height:26px;
+    border:1px solid #ccc;
+    background:white;
+    cursor:pointer;
+}
+
+.remove{
+    border:0;
+    background:none;
+    color:#a33;
+    cursor:pointer;
+    font-size:12px;
+}
+
+.cart-total{
+    margin-top:25px;
+    padding-top:20px;
+    border-top:2px solid #2d2825;
+    display:flex;
+    justify-content:space-between;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.checkout{
+    width:100%;
+    margin-top:20px;
+    background:#25D366;
+}
+
+.checkout:hover{
+    background:#159447;
+}
+
+.empty-cart{
+    text-align:center;
+    color:#888;
+    padding:50px 0;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:850px){
+
+    nav{
+        display:none;
+    }
+
     .hero{
-      position:relative;
-      height:min(610px,72vh);
-      min-height:470px;
-      overflow:hidden;
-      background:var(--cream);
+        min-height:570px;
+        background:
+        linear-gradient(
+            180deg,
+            rgba(250,248,245,.85),
+            rgba(250,248,245,.96)
+        ),
+        url("https://images.pexels.com/photos/9398148/pexels-photo-9398148.jpeg?auto=compress&cs=tinysrgb&w=1000");
+        background-position:center;
     }
-    .slide{
-      position:absolute;inset:0;
-      opacity:0;
-      transition:opacity .9s ease;
-      pointer-events:none;
-    }
-    .slide.active{opacity:1;pointer-events:auto}
-    .slide-bg{
-      position:absolute;inset:0;
-      background-size:cover;background-position:center;
-      filter:saturate(.78);
-      transform:scale(1.03);
-    }
-    /* Fashion-photo backgrounds; replace these URLs with your own product photos */
-    .s1 .slide-bg{
-      background-image:
-        linear-gradient(90deg,rgba(243,238,231,.96) 0%,rgba(243,238,231,.76) 43%,rgba(243,238,231,.18) 100%),
-        url("images/istockphoto-1324426337-612x612.jpg");
-    
-   }
-    .s2 .slide-bg{
-      background-image:
-        linear-gradient(90deg,rgba(36,35,33,.94) 0%,rgba(36,35,33,.68) 43%,rgba(36,35,33,.12) 100%),
-        url("images/istockphoto-1324426369-1024x1024.jpg");
-    }
-    .s3 .slide-bg{
-      background-image:
-        linear-gradient(90deg,rgba(232,222,210,.96) 0%,rgba(232,222,210,.76) 43%,rgba(232,222,210,.15) 100%),
-        url("images/pexels-adrian-akash-355265138-14664890.jpg");
-    }
-    .hero-content{
-      position:relative;z-index:2;
-      max-width:1200px;height:100%;
-      margin:auto;padding:60px 24px;
-      display:flex;align-items:center;
-    }
-    .copy{max-width:570px}
-    .eyebrow{
-      text-transform:uppercase;letter-spacing:4px;
-      font-size:12px;font-weight:700;margin-bottom:15px;
-      color:var(--brown);
-    }
-    .s2 .eyebrow,.s2 h1,.s2 p{color:#fff}
-    h1{
-      font-family:Georgia,serif;
-      font-size:clamp(42px,6vw,78px);
-      line-height:.98;
-      font-weight:400;
-      margin-bottom:20px;
-    }
-    .copy p{max-width:480px;color:#65584f;font-size:16px;margin-bottom:30px}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;
-      padding:13px 25px;border-radius:2px;
-      text-transform:uppercase;letter-spacing:1.5px;
-      font-size:12px;font-weight:700;
-      background:var(--brown-dark);color:#fff;
-      border:1px solid var(--brown-dark);
-      transition:.25s;cursor:pointer;
-    }
-    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(0,0,0,.15)}
-    .btn.light{background:#fff;color:var(--brown-dark);border-color:#fff}
-    .slider-controls{
-      position:absolute;z-index:5;bottom:26px;left:50%;
-      transform:translateX(-50%);display:flex;gap:8px;
-    }
-    .dot{
-      width:38px;height:3px;border:0;background:rgba(255,255,255,.55);
-      cursor:pointer;transition:.3s;
-    }
-    .dot.active{background:#fff;width:58px}
 
-    /* COLLECTION */
-    .section{padding:78px 24px}
-    .section-head{text-align:center;max-width:700px;margin:0 auto 40px}
-    .section-head .mini{font-size:12px;text-transform:uppercase;letter-spacing:3px;color:var(--accent);font-weight:700}
-    .section-head h2{font:400 43px Georgia,serif;margin:8px 0}
-    .section-head p{color:var(--muted)}
+    .hero h1{
+        font-size:48px;
+    }
+
     .products{
-      max-width:1200px;margin:auto;
-      display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
-    }
-    .card{position:relative;overflow:hidden;background:#f2ece5}
-    .card-img{
-      aspect-ratio:3/4;overflow:hidden;position:relative;
-      background:linear-gradient(145deg,#d9cec2,#f4eee8);
-    }
-    .card-img img{width:100%;height:100%;object-fit:cover;transition:.6s}
-    .card:hover img{transform:scale(1.05)}
-    .badge{
-      position:absolute;top:13px;left:13px;
-      background:var(--black);color:#fff;padding:6px 9px;
-      font-size:10px;letter-spacing:1px;text-transform:uppercase;
-    }
-    .card-info{padding:16px 4px 22px}
-    .card-info h3{font:400 19px Georgia,serif;margin-bottom:4px}
-    .price{font-weight:700;font-size:14px}
-    .old{text-decoration:line-through;color:#aaa;font-weight:400;margin-left:5px}
-    .swatches{display:flex;gap:6px;margin-top:10px}
-    .swatch{width:15px;height:15px;border-radius:50%;border:1px solid #bbb}
-    .black{background:#252321}.mocha{background:#765a49}.latte{background:#c9b09b}
-    .olive{background:#77745e}.burgundy{background:#70434a}.dusty{background:#b29a91}
-
-    /* CATEGORY */
-    .categories{
-      background:var(--cream);padding:75px 24px;
-    }
-    .cat-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .cat{
-      min-height:300px;padding:35px;display:flex;align-items:end;
-      position:relative;overflow:hidden;color:#fff;
-      background:#665448;
-    }
-    .cat:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,15,12,.68),transparent 65%)}
-    .cat:nth-child(1){background:linear-gradient(135deg,#252321,#766455)}
-    .cat:nth-child(2){background:linear-gradient(135deg,#6c5242,#c6a991)}
-    .cat:nth-child(3){background:linear-gradient(135deg,#78745d,#d6c9b8)}
-    .cat-content{position:relative;z-index:2}
-    .cat h3{font:400 34px Georgia,serif;margin-bottom:4px}
-    .cat p{font-size:13px;opacity:.9}
-    .cat a{display:inline-block;margin-top:14px;text-transform:uppercase;letter-spacing:1.5px;font-size:11px;font-weight:700}
-
-    /* TREND COLORS */
-    .trend{
-      max-width:1200px;margin:auto;display:grid;
-      grid-template-columns:1fr 1fr;gap:35px;align-items:center;
-    }
-    .trend-text h2{font:400 45px Georgia,serif;line-height:1.05;margin:8px 0 18px}
-    .trend-text p{color:var(--muted);max-width:520px}
-    .color-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:25px}
-    .color-box{height:105px;padding:12px;display:flex;align-items:end;color:#fff;font-size:11px;letter-spacing:1px;text-transform:uppercase}
-    .c-black{background:#242321}.c-mocha{background:#725746}.c-sand{background:#c7b39f}
-    .c-olive{background:#77745e}.c-wine{background:#70434a}.c-cream{background:#e6d9ca;color:#54483f}
-
-    /* NEWSLETTER */
-    .newsletter{
-      background:var(--brown-dark);color:#fff;padding:65px 24px;text-align:center
-    }
-    .newsletter h2{font:400 38px Georgia,serif;margin-bottom:8px}
-    .newsletter p{opacity:.72;margin-bottom:22px}
-    .newsletter form{display:flex;max-width:500px;margin:auto}
-    .newsletter input{flex:1;padding:15px;border:0;outline:0}
-    .newsletter button{border:0;padding:0 22px;background:#cbb19e;color:#2f2824;font-weight:700;cursor:pointer}
-
-    /* FOOTER */
-    footer{background:#1f1e1c;color:#c9c1ba;padding:50px 24px 25px}
-    .footer-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:40px}
-    footer h3{color:#fff;font:400 24px Georgia,serif;margin-bottom:12px}
-    footer h4{color:#fff;text-transform:uppercase;font-size:11px;letter-spacing:2px;margin-bottom:15px}
-    footer p,footer a{font-size:13px;color:#aaa19a}
-    footer a{display:block;margin-bottom:8px}
-    .copyright{max-width:1200px;margin:35px auto 0;padding-top:18px;border-top:1px solid #393632;font-size:11px;color:#777}
-
-    /* FLOAT WA */
-    .wa{
-      position:fixed;right:22px;bottom:22px;z-index:60;
-      width:54px;height:54px;border-radius:50%;
-      display:grid;place-items:center;background:#25D366;color:white;
-      font-size:26px;box-shadow:0 10px 25px rgba(0,0,0,.22);
+        grid-template-columns:1fr 1fr;
     }
 
-    @media(max-width:900px){
-      .navlinks{display:none}
-      .hamb{display:grid}
-      .products{grid-template-columns:repeat(2,1fr)}
-      .trend{grid-template-columns:1fr}
-      .footer-grid{grid-template-columns:1fr 1fr}
+    .product-image{
+        height:330px;
     }
-    @media(max-width:600px){
-      .nav{height:70px;padding:0 16px}
-      .logo{font-size:23px}
-      .navicons .icon:nth-child(1),.navicons .icon:nth-child(2){display:none}
-      .hero{height:610px}
-      .hero-content{align-items:end;padding:40px 20px 75px}
-      .copy{max-width:100%}
-      h1{font-size:49px}
-      .copy p{font-size:14px}
-      .section{padding:60px 18px}
-      .section-head h2{font-size:35px}
-      .products{gap:14px}
-      .card-info h3{font-size:16px}
-      .cat-grid{grid-template-columns:1fr}
-      .cat{min-height:230px}
-      .color-list{grid-template-columns:repeat(2,1fr)}
-      .newsletter form{flex-direction:column;gap:8px}
-      .newsletter button{padding:14px}
-      .footer-grid{grid-template-columns:1fr}
+
+    .about-grid{
+        grid-template-columns:1fr;
     }
-  </style>
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        height:65px;
+    }
+
+    .logo{
+        font-size:22px;
+    }
+
+    .hero-content{
+        padding:60px 20px;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .section{
+        padding:65px 15px;
+    }
+
+    .section h2{
+        font-size:34px;
+    }
+
+    .products{
+        grid-template-columns:1fr 1fr;
+        gap:12px;
+    }
+
+    .product-image{
+        height:260px;
+    }
+
+    .product-info{
+        padding:13px;
+    }
+
+    .product h3{
+        font-size:19px;
+    }
+
+    .product-description{
+        font-size:12px;
+    }
+
+    .price{
+        font-size:16px;
+    }
+
+    .product-buttons{
+        flex-direction:column;
+    }
+
+    .promo{
+        padding:0 15px;
+    }
+
+    .promo-box{
+        padding:35px 25px;
+    }
+
+    .promo h2{
+        font-size:32px;
+    }
+
+    .about-image{
+        height:400px;
+    }
+
+    .about-text h2{
+        font-size:35px;
+    }
+
+}
+
+/* =========================
+   NOTIFICATION
+========================= */
+
+.toast{
+    position:fixed;
+    left:50%;
+    bottom:25px;
+    transform:translateX(-50%) translateY(100px);
+    background:#2d2825;
+    color:white;
+    padding:13px 20px;
+    border-radius:3px;
+    z-index:5000;
+    transition:.3s;
+    font-size:13px;
+}
+
+.toast.show{
+    transform:translateX(-50%) translateY(0);
+}
+
+</style>
 </head>
+
 <body>
 
-  <div class="topbar">✨ GRATIS ONGKIR untuk pembelian minimum <strong>Rp300.000</strong> · Promo terbatas</div>
+<!-- =========================
+     HEADER
+========================= -->
 
-  <header>
-    <nav class="nav">
-      <a class="logo" href="#">NADIF<span>@</span>co</a>
-      <div class="navlinks">
-        <a href="#koleksi">New Arrival</a>
-        <a href="#koleksi">Best Seller</a>
-        <a href="#kategori">Kerudung</a>
-        <a href="#trend">Warna 2026</a>
-        <a href="#kontak">Kontak</a>
-      </div>
-      <div class="navicons">
-        <button class="icon" aria-label="Akun">♙</button>
-        <button class="icon" aria-label="Keranjang" onclick="alert('Keranjang siap digunakan. Hubungkan ke sistem checkout Anda.')">🛒</button>
-        <button class="icon" aria-label="Cari" onclick="document.getElementById('search').focus()">⌕</button>
-        <button class="icon hamb" aria-label="Menu" onclick="alert('Menu mobile: New Arrival · Best Seller · Kerudung · Warna 2026')">☰</button>
-      </div>
-    </nav>
-  </header>
+<header>
 
-  <main>
-    <section class="hero" aria-label="Promo utama">
-      <article class="slide s1 active">
-        <div class="slide-bg"></div>
-        <div class="hero-content">
-          <div class="copy">
-            <div class="eyebrow">NADIF@co · New Collection</div>
-            <h1>Elegance<br>in Every Fold.</h1>
-            <p>Kerudung pilihan dengan nuansa hitam, coklat, mocha, dan warna lembut yang mudah dipadukan untuk gaya modern.</p>
-            <a href="#koleksi" class="btn">Belanja Sekarang</a>
-          </div>
-        </div>
-      </article>
+<div class="navbar">
 
-      <article class="slide s2">
-        <div class="slide-bg"></div>
-        <div class="hero-content">
-          <div class="copy">
-            <div class="eyebrow">Signature Collection</div>
-            <h1>Black.<br>Timeless.</h1>
-            <p>Warna hitam yang selalu elegan. Pilihan praktis untuk kantor, acara formal, hingga daily look.</p>
-            <a href="#koleksi" class="btn light">Lihat Koleksi</a>
-          </div>
-        </div>
-      </article>
+<div class="logo">
+NADIF<span>@co</span>
+</div>
 
-      <article class="slide s3">
-        <div class="slide-bg"></div>
-        <div class="hero-content">
-          <div class="copy">
-            <div class="eyebrow">Trending Palette 2026</div>
-            <h1>Mocha &<br>Soft Earth.</h1>
-            <p>Palet earthy yang hangat dan sophisticated untuk melengkapi gaya modest wear masa kini.</p>
-            <a href="#trend" class="btn">Eksplor Warna</a>
-          </div>
-        </div>
-      </article>
+<nav>
+<a href="#home">HOME</a>
+<a href="#produk">PRODUK</a>
+<a href="#koleksi">KOLEKSI</a>
+<a href="#tentang">TENTANG</a>
+<a href="#kontak">KONTAK</a>
+</nav>
 
-      <div class="slider-controls" aria-label="Kontrol slider">
-        <button class="dot active" onclick="goSlide(0)"></button>
-        <button class="dot" onclick="goSlide(1)"></button>
-        <button class="dot" onclick="goSlide(2)"></button>
-      </div>
-    </section>
+<div class="nav-right">
 
-    <section class="section" id="koleksi">
-      <div class="section-head">
-        <div class="mini">NADIF@co Collections</div>
-        <h2>Koleksi Pilihan 2026</h2>
-        <p>Kerudung dengan warna versatile dan mudah dipadukan untuk aktivitas sehari-hari.</p>
-      </div>
+<button class="icon-btn" onclick="openCart()" title="Keranjang">
+🛒
+<span class="cart-count" id="cartCount">0</span>
+</button>
 
-      <div class="products">
-        <article class="card">
-          <div class="card-img">
-            <span class="badge">Best Seller</span>
-            <img src=images/pexels-teguhsugi-6070103.jpg alt="Fashion collection hitam">
-          </div>
-          <div class="card-info">
-            <h3>Nadif Basic Black</h3>
-            <div class="price">Rp99.000</div>
-            <div class="swatches"><i class="swatch black"></i><i class="swatch mocha"></i><i class="swatch latte"></i></div>
-          </div>
-        </article>
+</div>
 
-        <article class="card">
-          <div class="card-img">
-            <span class="badge">New</span>
-            <img src=images/pexels-teguhsugi-6070105.jpg alt="halt="Fashion collection mocha">
-          </div>
-          <div class="card-info">
-            <h3>Mocha Silk</h3>
-            <div class="price">Rp99.000</div>
-            <div class="swatches"><i class="swatch mocha"></i><i class="swatch dusty"></i><i class="swatch cream"></i></div>
-          </div>
-        </article>
+</div>
 
-        <article class="card">
-          <div class="card-img">
-            <span class="badge">Trending</span>
-            <img src=images/pexels-teguhsugi-6070106.jpg alt="Fashion collection earth tone">
-          </div>
-          <div class="card-info">
-            <h3>Earth Tone Voal</h3>
-            <div class="price">Rp99.000</div>
-            <div class="swatches"><i class="swatch olive"></i><i class="swatch latte"></i><i class="swatch mocha"></i></div>
-          </div>
-        </article>
+</header>
 
-        <article class="card">
-          <div class="card-img">
-            <span class="badge">New</span>
-            <img src=images/pexels-teguhsugi-6070107.jpg alt="Fashion collection burgundy">
-          </div>
-          <div class="card-info">
-            <h3>Wine Rose</h3>
-            <div class="price">Rp99.000</div>
-            <div class="swatches"><i class="swatch burgundy"></i><i class="swatch dusty"></i><i class="swatch black"></i></div>
-          </div>
-        </article>
-      </div>
-    </section>
 
-    <section class="categories" id="kategori">
-      <div class="section-head">
-        <div class="mini">Shop by mood</div>
-        <h2>Pilih Gaya Kamu</h2>
-        <p>Dari warna basic hingga earthy yang sedang menjadi favorit.</p>
-      </div>
-      <div class="cat-grid">
-        <div class="cat">
-          <div class="cat-content">
-            <h3>Black Edit</h3>
-            <p>Minimalis · Elegan · Timeless</p>
-            <a href="#koleksi">Shop now →</a>
-          </div>
-        </div>
-        <div class="cat">
-          <div class="cat-content">
-            <h3>Mocha Mood</h3>
-            <p>Hangat · Soft · Sophisticated</p>
-            <a href="#koleksi">Shop now →</a>
-          </div>
-        </div>
-        <div class="cat">
-          <div class="cat-content">
-            <h3>Earthy 2026</h3>
-            <p>Olive · Sand · Soft Brown</p>
-            <a href="#trend">Explore →</a>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- =========================
+     HERO
+========================= -->
 
-    <section class="section" id="trend">
-      <div class="trend">
-        <div class="trend-text">
-          <div class="section-head" style="text-align:left;margin:0">
-            <div class="mini">Color Story 2026</div>
-            <h2>Warna yang mudah dipakai, setiap hari.</h2>
-            <p>NADIF@co menggunakan palet netral dan earthy sebagai tema visual utama agar terasa hangat, premium, dan mudah dipadukan.</p>
-          </div>
-          <div class="color-list">
-            <div class="color-box c-black">Classic Black</div>
-            <div class="color-box c-mocha">Mocha Brown</div>
-            <div class="color-box c-sand">Warm Sand</div>
-            <div class="color-box c-olive">Soft Olive</div>
-            <div class="color-box c-wine">Deep Wine</div>
-            <div class="color-box c-cream">Vanilla Cream</div>
-          </div>
-        </div>
-        <div class="card-img" style="aspect-ratio:1/1;box-shadow:var(--shadow)">
-          <img src=images/Screenshot 2026-09-03 at 10.40.00.png alt="Inspirasi gaya modest">
-        </div>
-      </div>
-    </section>
-    <section class="newsletter" id="kontak">
-      <h2>Jadi yang pertama tahu.</h2>
-      <p>Daftar untuk mendapatkan info koleksi dan promo terbaru NADIF@co.</p>
-      <form onsubmit="subscribe(event)">
-        <input id="search" type="email" placeholder="Masukkan email kamu" required>
-        <button type="submit">SUBSCRIBE</button>
-      </form>
-    </section>
-  </main>
+<section class="hero" id="home">
 
-  <footer>
-    <div class="footer-grid">
-      <div>
-        <h3>NADIF@co</h3>
-        <p>Kerudung modern dengan sentuhan minimalis, earthy, dan timeless. Dibuat untuk menemani setiap cerita.</p>
-      </div>
-      <div>
-        <h4>Shop</h4>
-        <a href="#koleksi">New Arrival</a>
-        <a href="#koleksi">Best Seller</a>
-        <a href="#kategori">Kerudung</a>
-      </div>
-      <div>
-        <h4>Help</h4>
-        <a href="#">Cara Belanja</a>
-        <a href="#">Pengiriman</a>
-        <a href="#">Return</a>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <p>Instagram: @nadifco</p>
-        <p>WhatsApp: 08xx-xxxx-xxxx</p>
-        <p>Bandung, Indonesia</p>
-      </div>
-    </div>
-    <div class="copyright">© 2026 NADIF@co. All rights reserved.</div>
-  </footer>
+<div class="hero-content">
 
-  <a class="wa" href="https://wa.me/6283890508425?text=Halo%20NADIF%40co%2C%20saya%20ingin%20melihat%20koleksi%20kerudung." target="_blank" aria-label="Chat WhatsApp">☏</a>
+<div class="hero-small">
+NADIF@CO COLLECTION 2026
+</div>
 
-  <script>
-    let current = 0;
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.dot');
+<h1>
+Elegance<br>
+in Every Fold.
+</h1>
 
-    function goSlide(index){
-      current = index;
-      slides.forEach((s,i)=>s.classList.toggle('active',i===index));
-      dots.forEach((d,i)=>d.classList.toggle('active',i===index));
-    }
+<p>
+Koleksi pashmina dan hijab pilihan dengan nuansa
+hitam, coklat, mocha, pink, dan warna lembut
+yang mudah dipadukan untuk gaya modern.
+</p>
 
-    setInterval(()=>{
-      goSlide((current + 1) % slides.length);
-    }, 5000);
+<a href="#produk" class="btn">
+BELANJA SEKARANG
+</a>
 
-    function subscribe(e){
-      e.preventDefault();
-      alert('Terima kasih! Email kamu sudah dicatat untuk newsletter NADIF@co.');
-      e.target.reset();
-    }
-  </script>
-</body>
-</html>
+</div>
+
+</section>
+
+
+<!-- =========================
+     PRODUK
+========================= -->
+
+<section class="section" id="produk">
+
+<div class="section-head">
+
+<div class="section-label">
+NADIF@CO COLLECTION
+</div>
+
+<h2>
+Koleksi Pilihan 2026
+</h2>
+
+<p>
+Temukan warna favoritmu.
+</p>
+
+</div>
+
+
+<div class="products">
+
+
+<!-- PRODUK 1 -->
+
+<div class="product">
+
+<div class="product-image">
+
+<span class="badge">
+BEST SELLER
+</span>
+
+<img
+src="https://images.pexels.com/photos/9398148/pexels-photo-9398148.jpeg?auto=compress&cs=tinysrgb&w=900"
+alt="Pashmina Hitam">
+
+</div>
+
+<div class="product-info">
+
+<div class="product-category">
+PASHMINA
+</div>
+
+<h3>
+Pashmina Black
+</h3>
+
+<p class="product-description">
+Pashmina hitam elegan dan mudah dipadukan.
+</p>
+
+<div class="price">
+Rp 49.000
+</div>
+
+<div class="product-buttons">
+
+<button
+class="btn btn-buy"
+onclick="addToCart('Pashmina Black',49000,'https://images.pexels.com/photos/9398148/pexels-photo-9398148.jpeg?auto=compress&cs=tinysrgb&w=900')">
++ Keranjang
+</button>
+
+<button
+class="btn btn-light"
+onclick="buyNow('Pashmina Black',49000)">
+Beli
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUK 2 -->
+
+<div class="product">
+
+<div class="product-image">
+
+<span class="badge">
+NEW
+</span>
+
+<img
+src="https://images.pexels.com/photos/1698731/pexels-photo-1698731.jpeg?auto=compress&cs=tinysrgb&w=900"
+alt="Pashmina Pink">
+
+</div>
+
+<div class="product-info">
+
+<div class="product-category">
+PASHMINA
+</div>
+
+<h3>
+Pashmina Pink
+</h3>
+
+<p class="product-description">
+Warna pink lembut untuk tampilan feminin.
+</p>
+
+<div class="price">
+Rp 49.000
+</div>
+
+<div class="product-buttons">
+
+<button
+class="btn btn-buy"
+onclick="addToCart('Pashmina Pink',49000,'https://images.pexels.com/photos/1698731/pexels-photo-1698731.jpeg?auto=compress&cs=tinysrgb&w=900')">
++ Keranjang
+</button>
+
+<button
+class="btn btn-light"
+onclick="buyNow('Pashmina Pink',49000)">
+Beli
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUK 3 -->
+
+<div class="product">
+
+<div class="product-image">
+
+<span class="badge">
+TRENDING
+</span>
+
+<img
+src="https://images.pexels.com/photos/2689682/pexels-photo-2689682.jpeg?auto=compress&cs=tinysrgb&w=900"
+alt="Pashmina Coklat">
+
+</div>
+
+<div class="product-info">
+
+<div class="product-category">
+PASHMINA
+</div>
+
+<h3>
+Pashmina Coklat
+</h3>
+
+<p class="product-description">
+Nuansa coklat hangat dan elegan.
+</p>
+
+<div class="price">
+Rp 49.000
+</div>
+
+<div class="product-buttons">
+
+<button
+class="btn btn-buy"
+onclick="addToCart('Pashmina Coklat',49000,'https://images.pexels.com/photos/2689682/pexels-photo-2689682.jpeg?auto=compress&cs=tinysrgb&w=900')">
++ Keranjang
+</button>
+
+<button
+class="btn btn-light"
+onclick="buyNow('Pashmina Coklat',49000)">
+Beli
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUK 4 -->
+
+<div class="product">
+
+<div class="product-image">
+
+<img
+src="https://images.pexels.com/photos/6477858/pexels-photo-6477858.jpeg?auto=compress&cs=tinysrgb&w=900"
+alt="Pashmina Mocha">
+
+</div>
+
+<div class="product-info">
+
+<div class="product-category">
+PASHMINA
+</div>
+
+<h3>
+Pashmina Mocha
+</h3>
+
+<p class="product-description">
+Warna mocha natural untuk gaya minimalis.
+</p>
+
+<div class="price">
+Rp 49.000
+</div>
+
+<div class="product-buttons">
+
+<button
+class="btn btn-buy"
+onclick="addToCart('Pashmina Mocha',49000,'https://images.pexels.com/photos/6477858/pexels-photo-6477858.jpeg?auto=compress&cs=tinysrgb&w=900')">
++ Keranjang
+</button>
+
+<button
+class="btn btn-light"
+onclick="buyNow('Pashmina Mocha',49000)">
+Beli
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUK 5 -->
+
+<div class="product">
+
+<div class="product-image">
+
+<span class="badge">
+NEW
+</span>
+
+<img
+src="https://images.pexels.com/photos/5125327/pexels-photo-5125327.jpeg?auto=compress&cs=tinysrgb&w=900"
+alt="Pashmina Dusty Rose">
+
+</div>
+
+<div class="product-info">
+
+<div class="product-category">
+PASHMINA
+</div>
+
+<h3>
+Dusty Rose
+</h3>
+
+<p class="product-description">
+Pink dusty yang cantik dan modern.
+</p>
+
+<div class="price">
+Rp 49.000
+</div>
+
+<div class="product-buttons">
+
+<button
+class="btn btn-buy"
+onclick="addToCart('Pashmina Dusty Rose',49000,'https://images.pexels.com/photos/5125327/pexels-photo-5125327.jpeg?auto=compress&cs=tinysrgb&w=900')">
++ Keranjang
+</button>
+
+<button
+class="btn btn-light"
+onclick="buyNow('Pashmina Dusty Rose',49000)">
+Beli
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUK 6 -->
+
+<div class="product">
+
+<div class="product-image">
+
+<img
+src="https://images.pexels.com/photos/3995456/pexels-photo-3995456.jpeg?auto=compress&cs=tinysrgb&w=900"
+alt="Pashmina Brown">
+
+</div>
+
+<div class="product-info">
+
+<div class="product-category">
+PASHMINA
+</div>
+
+<h3>
+Pashmina Brown
+</h3>
+
+<p class="product-description">
+Warna brown yang cocok untuk outfit sehari-hari.
+</p>
+
+<div class="price">
+Rp 49.000
+</div>
+
+<div class="product-buttons">
+
+<button
+class="btn btn-buy"
+onclick="addToCart('Pashmina Brown',49000,'https://images.pexels.com/photos/3995456/pexels-photo-3995456.jpeg?auto=compress&cs=tinysrgb&w=900')">
++ Keranjang
+</button>
+
+<button
+class="btn btn-light"
+onclick="buyNow('Pashmina Brown',49000)">
+Beli
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PROMO
+========================= -->
+
+<section class="promo">
+
+<div class="promo-box">
+
+<div class="promo-content">
+
+<div class="section-label">
+NADIF@CO SPECIAL
+</div>
+
+<h2>
+Complete Your Look.
+</h2>
+
+<p>
+Pilih warna favoritmu dan pesan langsung
+melalui WhatsApp NADIF@co.
+</p>
+
+<br>
+
+<a
+href="https://wa.me/6283890508425?text=Halo%20NADIF@co,%20saya%20ingin%20melihat%20koleksi%20pashmina."
+target="_blank"
+class="btn">
+CHAT WHATSAPP
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     TENTANG
+========================= -->
+
+<section class="about" id="tentang">
+
+<div class="about-grid">
+
+<div class="about-image">
+
+<img
+src="https://images.pexels.com/photos/8063385/pexels-photo-8063385.jpeg?auto=compress&cs=tinysrgb&w=1000"
+alt="NADIF Fashion">
+
+</div>
+
+<div class="about-text">
+
+<div class="section-label">
+ABOUT NADIF@CO
+</div>
+
+<h2>
+Simple.<br>
+Elegant.<br>
+Confident.
+</h2>
+
+<p>
+NADIF@co hadir untuk menghadirkan koleksi
+hijab dan pashmina yang simpel, elegan,
+dan mudah dipadukan dengan berbagai gaya.
+</p>
+
+<p>
+Kami percaya bahwa penampilan yang nyaman
+dapat membuat setiap perempuan tampil lebih
+percaya diri.
+</p>
+
+<a href="#produk" class="btn">
+LIHAT PRODUK
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer id="kontak">
+
+<div class="footer-grid">
+
+<div>
+
+<div class="footer-logo">
+NADIF@co
+</div>
+
+<p>
+Pashmina & Hijab Collection
+<br>
+Elegance in Every Fold.
+</p>
+
+</div>
+
+<div>
+
+<h4>MENU</h4>
+
+<a href="#home">Home</a>
+<a href="#produk">Produk</a>
+<a href="#tentang">Tentang Kami</a>
+<a href="#kontak">Kontak</a>
+
+</div>
+
+<div>
+
+<h4>HUBUNGI KAMI</h4>
+
+<a
+href="https://wa.me/6283890508425"
+target="_blank">
+WhatsApp
+</a>
+
+<p>
+0838-9050-8425
+</p>
+
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 NADIF@co. All Rights Reserved.
+</div>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP
+========================= -->
+
+<a
+class="whatsapp"
+href="https://wa.me/6283890508425?text=Halo%20NADIF@co,%20saya%20ingin%20memesan%20produk."
+target="_blank"
+title="Chat WhatsApp">
+
+☎
+
+</a>
+
+
+<!-- =========================
+     CART
+========================= -->
+
+<div
+class="cart-overlay"
+id="cartOverlay"
+onclick="closeCartOutside(event)">
+
+<div class="cart">
+
+<div class="cart-header">
+
+<h2>
+Keranjang
+</h2>
+
+<button
+class="close-cart"
+onclick="closeCart()">
+×
+</button>
+
+</div>
+
+<div id="cartItems">
+</div>
+
+<div id="cartBottom">
+
+<div class="cart-total">
+
+<span>
+Total
+</span>
+
+<span id="cartTotal">
+Rp 0
+</span>
+
+</div>
+
+<button
+class="btn checkout"
+onclick="checkoutWhatsApp()">
+
+📲 Pesan via WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+</di
